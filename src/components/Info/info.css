@@ -1,0 +1,47 @@
+.wrap {
+  border: 1px solid lightgray;
+  margin: 100px 0px;
+}
+
+.name {
+  width: 200px;
+  margin-top: -15px;
+  margin-left: 30px;
+  background: white;
+  text-align: center;
+} 
+
+.box {
+  padding: 5%;
+}
+
+.index-dropshipper {
+  margin-bottom: 50px;
+}
+
+.group-dropshipper {
+  float: left;
+  width: 30%;
+}
+
+.group-info {
+  padding: 20px 0px;
+}
+
+.label-info {
+  float: left;
+  width: 20%;
+}
+
+.garis {
+  margin: 20px 0px;
+  background-color: lightgray;
+}
+
+.next {
+  float: right;
+  background: black;
+  color: white;
+  border: 1px solid lightgray;
+  padding: 5px 20px;
+}
