@@ -1,0 +1,129 @@
+.index {
+  width: 80%;
+  margin: auto;
+}
+
+h1 {
+  float: left;
+  width: 10%;
+}
+
+/* ul {
+  padding-top: 30px;
+  overflow: hidden;
+  counter-reset: step;
+}
+
+ul .step {
+  list-style-type: none;
+	text-transform: capitalize;
+	font-size: 14px;
+	width: 33.33%;
+	float: left;
+  position: relative;
+  margin-left: -40px;
+}
+
+ul .step::before {
+  content: counter(step);
+	counter-increment: step;
+	width: 30px;
+	line-height: 20px;
+	display: block;
+  font-size: 14px;
+  border: 1px solid lightgray;
+  background: white;
+  border-radius: 30%;
+  text-align: center;
+}
+
+ul .step::after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: lightgray;
+	position: absolute;
+	left: -100%;
+	top: 9px;
+	z-index: -1; /*put it behind the numbers*/
+/* } */ 
+
+/* ul .step:first-child:after { */
+	/*connector not needed before the first step*/
+	/* content: none;  */
+/* } */
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+/* ul .step.active:before,  #progressbar li.active:after{ */
+	/* background: #27AE60; */
+	/* color: white; */
+/* } */
+
+ul.step, ul.step li {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 90%;
+  margin-top: 30px;
+}
+ul.step {
+  counter-reset: num;
+}
+ul.step li {
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+ul.step li::before {
+  counter-increment: num;
+  content: counter(num);
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  line-height: 1.5em;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  background: white;
+}
+ul.step li ~ li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  right: 50%;
+  height: 2px;
+  background-color: lightgray;
+  top: calc(.75em - 2px);
+  z-index: -1;
+}
+
+ul.step li.active::before {
+  background: #04497b;
+  color: white;
+}
+
+/* ul.step .active ~ li::before,
+ul.step .active ~ li::after {
+  background: lightgray;
+} */
+ul.step span {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+/*  updated sample  */
+
+ul.step li.completed::before {       /* number and circle  */
+  background: red;
+  color: white;
+}
+
+ul.step li.completed span {       /* text  */
+  color: red;
+}
+
+ul.step li.completed + li::after {   /* line after circle  */
+  background: red;
+}
+ul.step li.completed::after {        /* line before circle  */
+  background: red;
+}
