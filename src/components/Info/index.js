@@ -34,7 +34,7 @@ class Info extends Component {
             <input type="email" />
           </div>
           <hr className="garis" />
-          <button className="next">Next</button>
+          <button className="next" onClick={this.props.nextStep}>Next</button>
         </div>
       </div>
     );
