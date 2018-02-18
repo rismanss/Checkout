@@ -4,7 +4,6 @@ import Info from '../Info';
 import Shipping from '../Shipping';
 import Confirm from '../Confirm';
 import './home.css';
-import { Values } from 'redux-form-website-template';
 import PropTypes from 'prop-types';
 
 class Home extends Component {
@@ -47,7 +46,6 @@ class Home extends Component {
             <Confirm previousStep={this.previousStep} onSubmit={onSubmit} />
           )}
         </div>
-        <Values form="wizard" />
       </div>
     );
   }

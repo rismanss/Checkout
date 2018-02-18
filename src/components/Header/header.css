@@ -3,7 +3,8 @@ h1 {
   width: 10%;
 }
 
-ul.step, ul.step li {
+ul.step,
+ul.step li {
   margin: 0;
   padding: 0;
   display: flex;
@@ -36,7 +37,7 @@ ul.step li ~ li::after {
   right: 50%;
   height: 2px;
   background-color: lightgray;
-  top: calc(.75em - 2px);
+  top: calc(0.75em - 2px);
   z-index: -1;
 }
 
@@ -45,10 +46,11 @@ ul.step li.active::before {
   color: white;
 }
 
-/* ul.step .active ~ li::before,
+ul.step .active ~ li::before,
 ul.step .active ~ li::after {
   background: lightgray;
-} */
+}
+
 ul.step span {
   font-size: 14px;
   text-transform: capitalize;
@@ -56,18 +58,22 @@ ul.step span {
 
 /*  updated sample  */
 
-ul.step li.completed::before {       /* number and circle  */
+ul.step li.completed::before {
+  /* number and circle  */
   background: red;
   color: white;
 }
 
-ul.step li.completed span {       /* text  */
+ul.step li.completed span {
+  /* text  */
   color: red;
 }
 
-ul.step li.completed + li::after {   /* line after circle  */
+ul.step li.completed + li::after {
+  /* line after circle  */
   background: red;
 }
-ul.step li.completed::after {        /* line before circle  */
+ul.step li.completed::after {
+  /* line before circle  */
   background: red;
 }

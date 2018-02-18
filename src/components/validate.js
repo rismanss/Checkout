@@ -26,6 +26,9 @@ const validate = values => {
   } else if (!/^[0-9,+-]{6,20}$/i.test(values.dropshipperPhone)) {
     errors.dropshipperPhone = '6-20 digits. should 0-9,-,+,(,)';
   }
+  if (!values.service) {
+    errors.service = 'Required !';
+  }
   return errors;
 };
 

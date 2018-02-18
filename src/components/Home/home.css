@@ -2,3 +2,55 @@
   width: 80%;
   margin: auto;
 }
+
+@media screen and (max-width: 900px) and (min-width: 300px) {
+  /* home, header, info */
+  h1 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .name {
+    margin-left: none;
+  }
+
+  .group-dropshipper {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .label-info {
+    float: none;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+
+  .count {
+    margin-left: 0px;
+  }
+
+  .next {
+    margin-top: -20px;
+  }
+
+  ul.step {
+    margin: auto;
+  }
+
+  /* shipping */
+  .table {
+    width: 50%;
+  }
+
+  .prev {
+    margin-top: -20px;
+  }
+
+  .label-delivery {
+    width: 50%;
+  }
+
+  .payment {
+    margin-left: 50%;
+  }
+}

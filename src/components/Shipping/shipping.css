@@ -41,3 +41,16 @@
   float: left;
   width: 25%;
 }
+
+.delivery {
+  padding: 20px 0px;
+}
+
+.label-delivery {
+  float: left;
+  width: 20%;
+}
+
+.payment {
+  margin: 0px 15px 15px 192px;
+}
