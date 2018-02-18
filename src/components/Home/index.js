@@ -33,7 +33,11 @@ class Home extends Component {
     const { step } = this.state;
     return (
       <div className="index">
-        <Header step={this.state.step} />
+        <Header
+          step={this.state.step}
+          nextStep={this.nextStep}
+          previousStep={this.previousStep}
+        />
         <div>
           {step === 1 && <Info onSubmit={this.nextStep} />}
           {step === 2 && (

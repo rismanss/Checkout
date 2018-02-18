@@ -10,7 +10,6 @@ class Shipping extends Component {
     const {
       handleSubmit,
       pristine,
-      previousPage,
       submitting,
       name,
       phone,

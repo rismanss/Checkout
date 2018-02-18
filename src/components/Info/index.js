@@ -6,7 +6,6 @@ import renderField from '../renderField';
 import validate from '../validate';
 import textarea from '../textarea';
 import { connect } from 'react-redux';
-import values from 'redux-form/lib/values';
 
 class Info extends Component {
   render() {

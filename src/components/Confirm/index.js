@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './confirm.css';
-import { Field, reduxForm, formValueSelector } from 'redux-form';
+import { reduxForm, formValueSelector } from 'redux-form';
 import validate from '../validate';
 import { connect } from 'react-redux';
 
@@ -14,9 +14,6 @@ class Confirm extends Component {
   render() {
     const {
       handleSubmit,
-      pristine,
-      previousPage,
-      submitting,
       name,
       phone,
       email,
